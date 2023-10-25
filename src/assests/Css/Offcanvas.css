@@ -1,0 +1,64 @@
+.offcanvas{
+    background: #3a6186; 
+    background: -webkit-linear-gradient(
+      to right,
+      #89253e,
+      #3a6186
+    );
+    background: linear-gradient(
+      to right,
+      #89253e,
+      #3a6186
+    );
+width:100%;
+border-bottom-left-radius:20px;
+border-bottom-right-radius:20px;
+box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+.filter_btn button{
+padding:5px 10px 5px 10px;
+border-radius:5px;
+outline: none;
+margin:10px;
+}
+.offcanvas-body{
+height:100px;
+overflow-y:unset;
+}
+.offcanvas-top{
+height:200px;
+}
+/* Apply these styles to your Offcanvas content */
+.offcanvas-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 80vh; /* Adjust the max-height as needed */
+    overflow-y: auto;
+  }
+  
+  /* Style the buttons within the Offcanvas */
+  .filter_btn button {
+    margin: 5px;
+    color: #862740;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Apply responsive styles */
+  @media (max-width: 768px) {
+    .offcanvas-body {
+      justify-content: center;
+    }
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 576px) {
+    .offcanvas-body {
+      max-height: 50vh; /* Reduce the max-height for smaller screens */
+    }
+  }
+  
