@@ -32,7 +32,6 @@ const ViewMovie = () => {
     });
   };
  
-  console.log("data0",typeof(Moviedata,data.state.data),data);
 
   useEffect(() => {
     if (data.state !== null) {
