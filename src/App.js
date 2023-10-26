@@ -6,7 +6,7 @@ import Movies from './components/Movies';
 import Footer from './components/Footer';
 import SingleMovie from './components/SingleMovie';
 import ViewMovie from './components/ViewMovie';
-
+import DailyModal from './components/Daily_Modal';
 const App = () => 
 {
 
@@ -14,6 +14,7 @@ const App = () =>
     <BrowserRouter>
     <div className='App'>
     <Navbar/>
+    <DailyModal/>
     <Routes>
     <Route index element={<Movies/>} />
     <Route path='/movie/:id' element={<SingleMovie />} />
