@@ -34,6 +34,10 @@ const ViewMovie = () => {
  
 
   useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
     if (data.state !== null) {
       if(data.pathname==="/movie_all/search_movies")
       {
