@@ -6,6 +6,8 @@
   padding-left: 100px;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-left:90px;
+  padding-right:90px;
   padding-top: 100px;
   background: #3a6186;
   background: -webkit-linear-gradient(to right, #89253e, #3a6186);
@@ -15,6 +17,7 @@
 }
 .moviesalldata{
 display: flex;
+padding-left:40px;
 flex-direction: column;
 }
 
