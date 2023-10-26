@@ -46,6 +46,10 @@ const SingleMovie = () => {
   };
 
   useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
     dispatch(fetchMoviedata(id));
     dispatch(fetchSimiliar(id));
     dispatch(fetchCredit(id));
