@@ -121,9 +121,9 @@ const SingleMovie = () => {
                   STUDIO:
                   {data.production_companies?.map((item, index) => {
                     return (
-                      <>
+                      
                         <span key={index}>{item.name},</span>
-                      </>
+                  
                     );
                   })}
                 </li>
@@ -186,8 +186,8 @@ const SingleMovie = () => {
             ) : (
               similiar.results.slice(0, 5)?.map((item, index) => {
                 return (
-                  <figure class="snip1527" key={index}>
-                    <div class="image">
+                  <figure className="snip1527" key={index}>
+                    <div className="image">
                       {item.poster_path !== null ? (
                         <img
                           src={`https://image.tmdb.org/t/p/w300/${item.poster_path}`}
