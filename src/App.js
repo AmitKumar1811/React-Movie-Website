@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import SingleMovie from './components/SingleMovie';
 import ViewMovie from './components/ViewMovie';
 import DailyModal from './components/Daily_Modal';
+import { Analytics } from '@vercel/analytics/react';
 const App = () => 
 {
 
@@ -21,6 +22,7 @@ const App = () =>
     <Route path='/movie_all/:type' element={<ViewMovie />} />
     </Routes>
     </div>
+    <Analytics />
     <Footer/>
     </BrowserRouter>
    
